@@ -33,8 +33,9 @@ class _add_dataState extends State<add_data> {
   bool isvisebl = false;
   DatabaseHelper sqlDb = DatabaseHelper.instance;
 
-  String get morimge => moreImagesUrlController.text;
-  set morimge(String value) => moreImagesUrlController.text = value;
+String get morImagesUrl => moreImagesUrlController.text;
+set morImagesUrl(String value) => moreImagesUrlController.text = value;
+
   String get address => addressController.text;
   set address(String value) => addressController.text = value;
   String get phone => phonelController.text;
