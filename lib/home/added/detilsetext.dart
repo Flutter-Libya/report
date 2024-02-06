@@ -56,8 +56,9 @@ class _add_dataState extends State<add_data> {
   set des(String value) => descriptionController.text = value;
   double? get sq => double.tryParse(sqfeetController.text);
   set sq(double? value) => sqfeetController.text = value?.toString() ?? '';
-  String get time => timeController.text;
-  set time(String value) => timeController.text = value;
+DateTime get time => DateTime.parse(timeController.text);
+set time(DateTime value) => timeController.text = value.toIso8601String();
+
 
   int? get reg => int.tryParse(regionIdController.text);
   set reg(int? value) => regionIdController.text = value?.toString() ?? '';
